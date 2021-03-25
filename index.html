@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ninja javascript</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <div class="toggle">
+        <div class="btn-wrapper">
+          <button class="html" @click="toggleHtml">HTML</button>
+          <button class="css" @click="toggleCss">CSS</button>
+          <button class="js" @click="toggleJs">JS</button>
+        </div>
+
+        <div class="html-block block" v-if="html">
+          <h3>This is about HTML</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+            necessitatibus doloremque error mollitia. Totam, molestiae beatae ab
+            provident laboriosam enim quasi. Obcaecati eligendi corrupti in. Eos
+            sit voluptatem assumenda! Tenetur!
+          </p>
+        </div>
+
+        <div class="css-block block" v-if="css">
+          <h3>This is about CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            minima ipsam voluptatibus fuga, ut labore! Adipisci, enim incidunt?
+            Est, modi facere. Laboriosam, nam porro in provident ad repellendus.
+            Provident, voluptas! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quos facere, earum placeat nobis eaque molestiae
+            quo a est. Quo optio placeat accusamus deleniti eligendi mollitia
+            nostrum dolores harum quibusdam blanditiis!
+          </p>
+        </div>
+
+        <div class="js-block block" v-if="js">
+          <h3>This is about JS</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+            odio incidunt voluptates, et quam consectetur tenetur enim
+            aspernatur eveniet molestias dolores quasi. Modi quis velit nihil
+            doloremque dolorem tempora necessitatibus.
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perspiciatis, cumque ad nesciunt doloremque saepe adipisci, placeat
+            temporibus illum laudantium modi dolorem consequatur ullam
+            repudiandae doloribus facilis odio? Hic, quod explicabo.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            quaerat accusantium nam vero impedit, illum repellendus corrupti est
+            pariatur optio facilis aut necessitatibus harum praesentium veniam
+            ab eum odit odio!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
